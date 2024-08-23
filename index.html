@@ -4,58 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project 3:  Top 500 Movies</title>
+    <title>Project 3: Top 500 Movies</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
 </head>
 <body>
     <h1>Top 500 Movies (by Production Cost)</h1>
     <h2>Industry Statistics</h2>
-    <label for="plots">Choose a summary plot:</label>
-    <select name="plots" id="plots">
-        <option value="images/film_releases.png" >Movie Release by Year</option>
-        <option value="images/gross_by_year.png">Gross Revenue by Year</option>
-        <option value="images/cost_vs_gross.png">Production Cost vs. Gross Income</option>
-        <option value="images/top_opening_weekend_profit.png">Top Opening Weekend Profit</option>
-        <option value="images/profit_portion_by_genre.png">Portion of Profit by Genre</option>
-        <option value="images/ratings_distribution.png">Ratings Distribution</option>
-    </select>
-    <p>
-        <img src = "images/film_releases.png" alt = "Movie Release by Year">
+    <p align="left">
+        <label for="plots">Choose a summary plot:</label>
+        <select id="myselection">
+            <option></option>
+            <option value="1">Movie Release by Year</option>
+            <option value="2">Gross Revenue by Year</option>
+            <option value="3">Production Cost vs. Gross Income</option>
+            <option value="4">Top Opening Weekend Profit</option>
+            <option value="5">Portion of Profit by Genre</option>
+            <option value="6">Ratings Distribution</option>
+        </select>
     </p>
-    <h2>Industry Statistics #2</h2>
-    <label for="plots">Choose a summary plot:</label>
-    <select name="plots" id="plots">
-        <option value="film_releases">Movie Release by Year</option>
-        <option value="gross_by_year">Gross Revenue by Year</option>
-        <option value="cost_vs_gross">Production Cost vs. Gross Income</option>
-        <option value="top_opening_weekend_profit">Top Opening Weekend Profit</option>
-        <option value="profit_portion_by_genre">Portion of Profit by Genre</option>
-        <option value="ratings_distribution">Ratings Distribution</option>
-    </select> 
-    <h2>Industry Statistics #3</h2>
-    <label for="plots">Choose a summary plot:</label>
-    <select name="plots" id="plots">
-        <option value="film_releases">Movie Release by Year</option>
-        <option value="gross_by_year">Gross Revenue by Year</option>
-        <option value="cost_vs_gross">Production Cost vs. Gross Income</option>
-        <option value="top_opening_weekend_profit">Top Opening Weekend Profit</option>
-        <option value="profit_portion_by_genre">Portion of Profit by Genre</option>
-        <option value="ratings_distribution">Ratings Distribution</option>
-    </select>
-    <h2>Industry Statistics #4</h2>
-    <label for="plots">Choose a summary plot:</label>
-    <select name="plots" id="plots">
-        <option value="film_releases">Movie Release by Year</option>
-        <option value="gross_by_year">Gross Revenue by Year</option>
-        <option value="cost_vs_gross">Production Cost vs. Gross Income</option>
-        <option value="top_opening_weekend_profit">Top Opening Weekend Profit</option>
-        <option value="profit_portion_by_genre">Portion of Profit by Genre</option>
-        <option value="ratings_distribution">Ratings Distribution</option>
-    </select> 
+    <div id="show1" class="myDiv">
+        <img src="images/1.png" width="800" height="600"/>
+    </div>
+    <div id="show2" class="myDiv">
+        <img src="images/2.png" width="800" height="600"/>
+    </div>
+    <div id="show3" class="myDiv">
+        <img src="images/3.png" width="800" height="600"/>
+    </div>
+    <div id="show4" class="myDiv">    
+        <img src="images/4.png" width="800" height="600"/>
+    </div>
+    <div id="show5" class="myDiv">
+        <img src="images/5.png" width="800" height="600"/>
+    </div>
+    <div id="show6" class="myDiv">
+        <img src="images/6.png" width="600" height="600"/>
+    </div>
     <h2>Average Gross by MPAA Rating</h2>
     <h3>JavaScript - Plot.ly</h3>
     <div id="plot"></div>
     <script src="films.js"></script>
     <script src="plots.js"></script>
+    <script src="functions.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#myselection').on('change', function(){
+                var demovalue = $(this).val(); 
+                $("div.myDiv").hide();
+                $("#show" + demovalue).show();
+            });
+        });
+    </script>
 </body>
 </html>
+

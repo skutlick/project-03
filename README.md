@@ -33,6 +33,12 @@ visualizations.js: Manages Plotly chart creation and updates.
 Summary
 The website leverages JavaScript for dynamic image display and interactive data visualizations. By combining HTML, CSS, and JavaScript, the project creates a user-friendly interface for exploring movie data through various visualizations. The use of external libraries like Plotly enhances the interactivity and presentation of data.
 
+
+
+
+Graph Explanation: 
+
+
 1. Production Cost vs. Worldwide Gross
 Explanation: This scatter plot illustrates the relationship between the production cost of a movie and its worldwide gross revenue. Each point on the graph represents a movie, with the x-axis showing the production cost and the y-axis showing the worldwide gross. The plot helps to visualize whether higher production costs correlate with higher earnings.
 Insights:

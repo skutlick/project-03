@@ -1,0 +1,64 @@
+//Create a function to calculate the sum of a metric
+function metricSum(films, year, rating, metric2) {
+  //Initiate variables to increment
+  let sum = 0;
+
+  //Loop through the array of films
+  for (let i = 0; i < films.length; i++) {
+
+    //Store the film at index 'i' for evaluation
+    let row = films[i];
+
+    // Compare `mpaa` value to `rating` and 'year' value to 'years' provided arguments
+    if (row.mpaa == rating && row.year == year){
+
+      //Increment by 'metric' argument value
+      sum += row[metric2];
+    }
+  }
+  //Return the sum value
+  return sum
+}
+
+//Invoke the metric sum function
+//Calculate the 'worldwide_gross' sum for each rating and year individually
+let metric1991R = metricSum(films, "1991", "R", metric2)
+let metric1994R = metricSum(films, "1994", "R", metric2)
+let metric1995PG_13 = metricSum(films, "1995", "PG-13", metric2)
+let metric1996G = metricSum(films, "1996", "G", metric2)
+let metric1996R = metricSum(films, "1996", "R", metric2)
+//
+
+// Sort the data by Production Cost results descending
+let sortedByProductionCost = films.sort((a, b) => b.production_cost - a.production_cost);
+
+// Slice the first 10 objects for plotting
+let slicedData = sortedByProductionCost.slice(0, 10);
+
+// Reverse the array to accommodate Plotly's defaults
+slicedData.reverse();
+
+// Trace2 for the Production Cost Data
+let trace2 = {
+x: slicedData.map(object => object.production_cost),
+y: slicedData.map(object => object.rating),
+type: "bar",
+orientation: "h"
+};
+
+// Data array
+let data2 = [trace2];
+
+// Apply a title to the layout
+let layout2 = {
+title: "Top 10 Films by Production Cost",
+margin: {
+    l: 50,
+    r: 50,
+    t: 50,
+    b: 50
+}
+};
+
+// Render the plot to the div tag with id "plot2"
+Plotly.newPlot("plot2", data2, layout2);

@@ -37,7 +37,8 @@ visualizations.js: Manages Plotly chart creation and updates.
 Summary
 The website leverages JavaScript for dynamic image display and interactive data visualizations. By combining HTML, CSS, and JavaScript, the project creates a user-friendly interface for exploring movie data through various visualizations. The use of external libraries like Plotly enhances the interactivity and presentation of data.
 
-
+4. Ethical Considerations
+Budget figures for films can be both unreliable and difficult to find, as many studios and production companies elect to keep many details secret.  The website "The Numbers" attempts to present such budget data in a consistent and reliable manner.  However, in the event of any discrepancies, the site offers a contact email to allow for corrections within the dataset to resolve any conflicts.  The site offers both highly sophisticated budget detail available for purchase for further analysis, but also offers a similar dataset that is more of a rough estimate that can be used in both casual and academic settings.  Since our use of this data is not for commmercial use, we were not required to license the data through their reserach data or OpusData.  
 
 
 Graph Explanation: 

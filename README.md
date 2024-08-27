@@ -48,6 +48,10 @@ Direct Correlation: If there's a positive trend, it suggests that movies with hi
 Outliers: You may identify movies that were exceptionally profitable or underperformed relative to their budgets.
 Risk Assessment: This graph is valuable for studios to assess the financial risk of investing in high-budget films.
 
+<p align="center">
+    <img width="1000" src="./images/cost_gross.jpg">
+</p>
+
 
 2. Top Genres by Average Gross
 Explanation: This bar chart ranks movie genres based on their average worldwide gross. Each bar represents a genre, and the height of the bar reflects the average gross revenue for movies within that genre.
@@ -56,7 +60,9 @@ Genre Popularity: Helps identify which genres are most lucrative in the global m
 Investment Strategy: Studios can use this information to decide which genres might be safer investments or worth exploring further.
 Market Trends: It provides insight into changing audience preferences over time.
 
-
+<p align="center">
+    <img width="1000" src="./images/average_gross_genre.jpg">
+</p>
 
 3. Movies Released Over Time
 Explanation: This line chart shows the number of movies released each year. The x-axis represents the year, and the y-axis represents the number of movies released in that year.
@@ -64,6 +70,10 @@ Insights:
 Industry Growth: A rising trend indicates growth in the film industry, with more movies being produced over time.
 Economic Influence: You can correlate dips or spikes with historical events, economic conditions, or technological advancements (e.g., the impact of streaming services).
 Cultural Shifts: Changes in the number of releases might reflect cultural or regulatory shifts in different eras.
+
+<p align="center">
+    <img width="1000" src="./images/movie_releases.jpg">
+</p>
 
 
 4. Distribution of MPAA Ratings
@@ -73,6 +83,9 @@ Audience Demographics: Helps understand which ratings are most common among succ
 Content Trends: If certain ratings dominate, it may reflect trends in the type of content being produced.
 Regulatory Impact: Shows how rating decisions might influence a movie’s success, especially concerning market accessibility.
 
+<p align="center">
+    <img width="1000" src="./images/rating_distribution.jpg">
+</p>
 
 
 5. Top 10 Movies by Opening Weekend Gross
@@ -82,7 +95,9 @@ Marketing Success: A strong opening weekend typically indicates successful marke
 Franchise Strength: You may notice that certain franchises consistently perform well on opening weekends.
 Box Office Predictions: Studios can use this data to estimate future earnings based on opening performance.
 
-
+<p align="center">
+    <img width="1000" src="./images/top_10_opening_weekend.jpg">
+</p>
 
 6. Number of Theaters vs. Domestic Gross
 Explanation: This scatter plot examines the relationship between the number of theaters a movie was released in and its domestic gross revenue. The x-axis represents the number of theaters, and the y-axis represents domestic gross.
@@ -91,7 +106,9 @@ Distribution Strategy: A positive correlation suggests that wider releases tend 
 Theater Saturation: Identifies the point where increasing the number of theaters no longer significantly boosts revenue.
 Market Reach: Helps studios understand the importance of broad distribution in maximizing earnings.
 
-
+<p align="center">
+    <img width="1000" src="./images/theaters_gross.jpg">
+</p>
 
 7. Average Runtime by Genre
 Explanation: This bar chart displays the average runtime of movies across different genres. Each bar represents a genre, and its height indicates the average length of movies within that genre.
@@ -100,6 +117,9 @@ Genre Characteristics: Some genres might naturally have longer or shorter films 
 Viewer Preferences: Helps understand whether longer or shorter films tend to perform better within specific genres.
 Editing Decisions: Studios can use this information to make informed decisions about movie length based on genre expectations.
 
+<p align="center">
+    <img width="1000" src="./images/average_runtime.jpg">
+</p>
 
 8. Worldwide Gross by Year (Box Plot)
 Explanation: This box plot visualizes the distribution of worldwide gross revenue by year. Each box represents the range of earnings for movies released in that year, with the line inside the box showing the median gross.
@@ -108,6 +128,9 @@ Earnings Distribution: The box plot shows the variability in movie earnings year
 Outliers: Identifies movies that significantly outperformed or underperformed relative to their peers.
 Market Evolution: Tracks how the overall revenue potential of movies has changed over time.
 
+<p align="center">
+    <img width="1000" src="./images/worldwide_gross.jpg">
+</p>
 
 9. Correlation Matrix
 Explanation: This heatmap presents the correlation between different numerical variables in the dataset, such as production cost, domestic gross, worldwide gross, and runtime. The color intensity indicates the strength of the correlation.
@@ -116,6 +139,9 @@ Identifying Relationships: Strong correlations can reveal which factors are most
 Predictive Modeling: The correlation matrix is useful for building predictive models, helping to determine which variables to focus on.
 Unexpected Insights: Sometimes, unexpected correlations can lead to new hypotheses or strategies.
 
+<p align="center">
+    <img width="1000" src="./images/correlation_matrix.jpg">
+</p>
 
 10. Top 10 Highest Grossing Movies Worldwide
 Explanation: This bar chart lists the top 10 highest-grossing movies worldwide. Each bar represents a movie, and the height indicates the total gross revenue.
@@ -125,5 +151,6 @@ Market Dominance: Shows the dominance of certain genres, studios, or franchises 
 Cultural Impact: These movies are often not only financially successful but also culturally significant, influencing trends and viewer expectations.
 These expanded explanations provide a deeper understanding of the insights each graph can offer, helping you interpret the data more effectively.
 
-
-
+<p align="center">
+    <img width="1000" src="./images/top_10_gross.jpg">
+</p>
